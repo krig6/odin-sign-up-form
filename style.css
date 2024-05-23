@@ -65,6 +65,7 @@ body {
   max-width: 450px;
   width: 100%;
   transition-duration: 0.3s;
+  position: relative;
 }
 
 .modal-left-header {
@@ -219,4 +220,19 @@ input:focus {
   transform: translateY(0);
   opacity: 1;
   transition-delay: 0.1s;
+}
+
+.icon-button {
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  height: 32px;
+  width: 32px;
+  outline: 0;
+  border: 0;
+  background: 0;
+  padding: 0;
+  cursor: pointer;
+  z-index: 1;
+  fill: #8b4513;
 }
