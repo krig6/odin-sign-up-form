@@ -105,7 +105,7 @@ p {
 }
 
 img {
-  height: 600px;
+  height: 100%;
   max-width: 450px;
   object-fit: cover;
   transform: scale(2);
