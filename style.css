@@ -163,6 +163,23 @@ input:focus {
   transition: 0.3s;
 }
 
+.join-button {
+  padding: 8px 12px;
+  outline: none;
+  border: none;
+  color: #ffffff;
+  background: #e27223;
+  font-size: 1.2em;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  font-family: Cabin;
+  cursor: pointer;
+  border-radius: 50px;
+  letter-spacing: 0.2em;
+  transition: 0.5s;
+}
+
 .create-account:hover {
   background-color: #8b4513;
 }
