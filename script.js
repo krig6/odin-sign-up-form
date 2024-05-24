@@ -135,7 +135,13 @@ confirmPassword.addEventListener('input', isPasswordMatch);
 
 createButton.addEventListener('click', (event) => {
     event.preventDefault(); // Prevent default button behavior
-    firstName.focus();
+    isPasswordMatch();
     alert('Thanks for checking out my Odin Project sign-up form! I appreciate your visit!')
 });
+
+phoneNumber.addEventListener('input', (event) => {
+    let phone = event.target.value.replace(/\D/g, "");
+    phone = phone.substring(0, 15);
+    event.target.value = phone;
+})
 
