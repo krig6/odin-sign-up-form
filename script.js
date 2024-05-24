@@ -119,3 +119,16 @@ confirmPassword.addEventListener('focus', () => {
 
 password.addEventListener('input', validatePassword);
 
+function isPasswordMatch() {
+    if (password.value === confirmPassword.value) {
+        confirmPassword.setCustomValidity('');
+        confirmPassword.style.border = '2px solid green';
+    } else {
+        confirmPassword.setCustomValidity('The passwords do not match. Please try again.');
+        confirmPassword.style.border = '2px solid red';
+    }
+    confirmPassword.reportValidity();
+}
+
+confirmPassword.addEventListener('input', isPasswordMatch);
+
