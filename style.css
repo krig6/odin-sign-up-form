@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: Cabin;
+  font-family: Cabin, sans-serif;
 }
 
 .bg-container {
@@ -157,7 +157,7 @@ input:focus {
   border: none;
   color: #ffffff;
   background: #a5734f;
-  font-family: Cabin;
+  font-family: Cabin, sans-serif;
   cursor: pointer;
   border-radius: 5px;
   letter-spacing: 0.2em;
@@ -174,7 +174,7 @@ input:focus {
   cursor: pointer;
   border: 0;
   outline: 0;
-  font-family: Cabin;
+  font-family: Cabin, sans-serif;
   font-weight: 900;
   cursor: pointer;
   border-radius: 50px;
