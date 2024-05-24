@@ -4,7 +4,10 @@ const closeButton = document.querySelector('.close-button');
 const firstName = document.querySelector('#first-name');
 const lastName = document.querySelector('#last-name');
 const email = document.querySelector('#email');
+const phoneNumber = document.querySelector('#tel');
+
 const nameValidation = /^[a-zA-Z\s]+$/;
+const emailValidation = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
 joinButton.addEventListener('click', () => {
     modalContainer.classList.add('is-open');
@@ -72,7 +75,24 @@ function validateLastName() {
 email.addEventListener('focus', () => {
     validateLastName();
     lastName.reportValidity();
-})
+});
 
 lastName.addEventListener('input', validateLastName);
+
+function validateEmail() {
+    if (!emailValidation.test(email.value)) {
+        email.setCustomValidity('Please enter a valid email address.');
+        email.style.border = '2px solid red';
+    } else {
+        email.setCustomValidity('');
+        email.style.border = '2px solid green';
+    }
+}
+
+phoneNumber.addEventListener('focus', () => {
+    validateEmail();
+    email.reportValidity();
+});
+
+email.addEventListener('input', validateEmail);
 
