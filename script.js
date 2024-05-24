@@ -5,9 +5,12 @@ const firstName = document.querySelector('#first-name');
 const lastName = document.querySelector('#last-name');
 const email = document.querySelector('#email');
 const phoneNumber = document.querySelector('#tel');
+const password = document.querySelector('#password');
+const confirmPassword = document.querySelector('#confirm-password');
 
 const nameValidation = /^[a-zA-Z\s]+$/;
 const emailValidation = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+const passwordLength = 6;
 
 joinButton.addEventListener('click', () => {
     modalContainer.classList.add('is-open');
@@ -95,4 +98,24 @@ phoneNumber.addEventListener('focus', () => {
 });
 
 email.addEventListener('input', validateEmail);
+
+function validatePassword() {
+    if (password.value.trim() === '') {
+        password.setCustomValidity('You must enter a password.');
+        password.style.border = '2px solid red';
+    } else if (password.value.length < passwordLength) {
+        password.setCustomValidity('Please enter a password with 6 or more characters.');
+        password.style.border = '2px solid red';
+    } else {
+        password.setCustomValidity('');
+        password.style.border = '2px solid green';
+    }
+}
+
+confirmPassword.addEventListener('focus', () => {
+    validatePassword();
+    password.reportValidity();
+});
+
+password.addEventListener('input', validatePassword);
 
