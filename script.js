@@ -7,6 +7,7 @@ const email = document.querySelector('#email');
 const phoneNumber = document.querySelector('#tel');
 const password = document.querySelector('#password');
 const confirmPassword = document.querySelector('#confirm-password');
+const createButton = document.querySelector('.create-account');
 
 const nameValidation = /^[a-zA-Z\s]+$/;
 const emailValidation = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
@@ -131,4 +132,10 @@ function isPasswordMatch() {
 }
 
 confirmPassword.addEventListener('input', isPasswordMatch);
+
+createButton.addEventListener('click', (event) => {
+    event.preventDefault(); // Prevent default button behavior
+    firstName.focus();
+    alert('Thanks for checking out my Odin Project sign-up form! I appreciate your visit!')
+});
 
