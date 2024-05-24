@@ -165,16 +165,17 @@ input:focus {
 }
 
 .join-button {
-  padding: 8px 12px;
+  padding: 8px 50px;
   outline: none;
   border: none;
-  color: #ffffff;
-  background: #e27223;
+  color: #000000;
+  background: #ccc;
   font-size: 1.2em;
   cursor: pointer;
   border: 0;
   outline: 0;
   font-family: Cabin;
+  font-weight: 900;
   cursor: pointer;
   border-radius: 50px;
   letter-spacing: 0.2em;
