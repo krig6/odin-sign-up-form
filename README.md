@@ -40,6 +40,6 @@ But, even with all the challenges, seeing the project come together and actually
 - Responsive design for all devices
 
 ## Acknowledgments
-[Nitish Meena](https://unsplash.com/@nitishm) on [Unsplash](https://unsplash.com/)
-[Jaime Reimer](https://www.pexels.com/@jaime-reimer-1376930/) on [Pexels](https://www.pexels.com/)
 
+[Nitish Meena](https://unsplash.com/@nitishm) on [Unsplash](https://unsplash.com/)<br>
+[Jaime Reimer](https://www.pexels.com/@jaime-reimer-1376930/) on [Pexels](https://www.pexels.com/)
