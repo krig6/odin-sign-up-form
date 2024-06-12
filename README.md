@@ -36,10 +36,10 @@ But, even with all the challenges, seeing the project come together and actually
 - Ability to switch from sign-up to login
 - More efficient and accurate way of validation
 - Server-side validations
-- A complet webpage providing support for hikers to find a community
+- A complete webpage providing support for hikers to find a community
 - Responsive design for all devices
 
 ## Acknowledgments
 
-[Nitish Meena](https://unsplash.com/@nitishm) on [Unsplash](https://unsplash.com/)<br>
-[Jaime Reimer](https://www.pexels.com/@jaime-reimer-1376930/) on [Pexels](https://www.pexels.com/)
+- [Nitish Meena](https://unsplash.com/@nitishm) on [Unsplash](https://unsplash.com/)<br>
+- [Jaime Reimer](https://www.pexels.com/@jaime-reimer-1376930/) on [Pexels](https://www.pexels.com/)
