@@ -42,4 +42,5 @@ But, even with all the challenges, seeing the project come together and actually
 ## Acknowledgments
 
 - Photo by [Nitish Meena](https://unsplash.com/@nitishm) on [Unsplash](https://unsplash.com/)<br>
-- Photo by [Jaime Reimer](https://www.pexels.com/@jaime-reimer-1376930/) on [Pexels](https://www.pexels.com/)
+- Photo by [Jaime Reimer](https://www.pexels.com/@jaime-reimer-1376930/) on [Pexels](https://www.pexels.com/)<br>
+- Favicon from [Flaticon](https://www.flaticon.com/)
