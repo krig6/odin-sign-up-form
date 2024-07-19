@@ -9,6 +9,7 @@ const phoneNumber = document.querySelector('#tel');
 const password = document.querySelector('#password');
 const confirmPassword = document.querySelector('#confirm-password');
 const createButton = document.querySelector('.create-account');
+const notification = document.getElementById('notification');
 
 // Regular expressions for validation
 const nameValidation = /^[a-zA-Z\s]+$/;
@@ -67,8 +68,13 @@ confirmPassword.addEventListener('focus', () => {
 
 createButton.addEventListener('click', (event) => {
     event.preventDefault(); // Prevent default form submission behavior
-    alert('Thanks for checking out my Odin Project sign-up form! I appreciate your visit!');
     firstName.focus();
+
+    notification.classList.add('show');
+
+    setTimeout(() => {
+        notification.classList.remove('show');
+    }, 5000); // Hide after 3 seconds
 });
 
 // Functions for validating input fields
