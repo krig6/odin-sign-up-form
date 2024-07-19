@@ -67,8 +67,8 @@ confirmPassword.addEventListener('focus', () => {
 
 createButton.addEventListener('click', (event) => {
     event.preventDefault(); // Prevent default form submission behavior
-    isPasswordMatch();
-    alert('Thanks for checking out my Odin Project sign-up form! I appreciate your visit!')
+    alert('Thanks for checking out my Odin Project sign-up form! I appreciate your visit!');
+    firstName.focus();
 });
 
 // Functions for validating input fields
